@@ -2,10 +2,9 @@ import { ReactNode, useState } from "react";
 import Snackbar from "../components/Snackbar";
 
 import SnackbarContext from "./SnackbarContext";
-import { SnackbarObject } from "./Type";
 
 function SnackbarProvider({ children }: { children: ReactNode }) {
-  const [notif, setNotif] = useState<SnackbarObject>({
+  const [notif, setNotif] = useState<TSnackbarObject>({
     type: "",
     message: "",
     duration: 0,
