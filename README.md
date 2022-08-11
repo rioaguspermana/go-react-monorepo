@@ -33,14 +33,13 @@ note: your frontend is send request to golang backend via proxy, if you change y
 
 ```json
 {
-  ...
   "proxy": "http://localhost:11001",
-  ...
 }
 ```
 
-
 ## Deploying to Heroku
+
+note: make sure env in root folder have `APPS_MODE` is set to `production`.
 
 ```sh
 $ heroku create
