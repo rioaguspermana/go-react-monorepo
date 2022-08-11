@@ -1,0 +1,5 @@
+.env
+.docker_build/
+bin/
+notes.txt
+backup.txt
