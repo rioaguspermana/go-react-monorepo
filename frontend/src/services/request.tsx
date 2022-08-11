@@ -12,12 +12,12 @@ instance.interceptors.response.use(
   },
   async (err) => {
     const originalConfig = err.config;
-    if (originalConfig.url !== "/api/assist/auth/login" && err.response) {
+    if (originalConfig.url !== "/api/auth/login" && err.response) {
       // Access Token was expired
       if (err.response.status === 401 && !originalConfig._retry) {
         originalConfig._retry = true;
         try {
-          await axios.post("/api/assist/auth/refresh_token", {});
+          await axios.post("/api/auth/refresh_token", {});
           return instance(originalConfig);
         } catch (error) {
           return Promise.reject(error);
