@@ -8,6 +8,8 @@ Go app with Gin and SQLite + React typescript with tailwind, which can easily be
 
 Make sure you have [Go](http://golang.org/doc/install) version 1.17 or newer, the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed, gcc compiler for SQLite and NodeJS for react.
 
+make sure env in root folder have `APPS_MODE` is set to `development`
+
 ```sh
 
 ```
